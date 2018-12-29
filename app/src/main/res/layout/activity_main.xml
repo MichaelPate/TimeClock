@@ -141,7 +141,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number|numberDecimal"
-        android:text="@string/defaultPay"
+        android:text="@string/pay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,7 +161,7 @@
 
     <Button
         android:id="@+id/calculate_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -169,6 +169,7 @@
         android:onClick="calculateWages"
         android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wage_hr" />
 
@@ -238,7 +239,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:text="@string/credit"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -247,5 +248,44 @@
         app:layout_constraintStart_toEndOf="@+id/clear_btn"
         app:layout_constraintTop_toBottomOf="@+id/wages_view"
         app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/took_Lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:checked="true"
+        android:text="@string/tookLunch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/calculate_btn"
+        app:layout_constraintTop_toBottomOf="@+id/wage_hr" />
+
+    <CheckBox
+        android:id="@+id/left_Early"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/leftEarly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/took_Lunch"
+        app:layout_constraintTop_toBottomOf="@+id/wage_hr" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/am_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002" />
 
 </android.support.constraint.ConstraintLayout>
