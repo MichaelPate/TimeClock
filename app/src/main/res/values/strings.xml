@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TimeClock</string>
+    <string name="dailyHours">TOTAL DAILY HOURS</string>
+    <string name="dailyWage">GROSS DAILY WAGES</string>
+    <string name="calculate">CALCULATE DAILY WAGES</string>
+    <string name="credit">Michael Pate, December 2018, v1.0</string>
+    <string name="resetBtn" >RESET</string>
+    <string name="wageLabel">PAY RATE:</string>
+    <string name="Out">OUT:</string>
+    <string name="In">IN:</string>
+    <string name="Pm">PM:</string>
+    <string name="Am">AM:</string>
+    <string name="hours">HOURS:</string>
+    <string name="wages">WAGES:</string>
+    <string name="defaultPay">15</string>
+</resources>
