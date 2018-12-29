@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         return Integer.parseInt(timeString.split(":")[1].trim());
     }
 
+
     public void clearFields(View view) {
         // Clear all fields and set back to default values
         EditText amIn = (EditText) findViewById(R.id.am_in);
